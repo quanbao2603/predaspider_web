@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.intro {
+    margin-top: 40px;
+}
+
+.intro h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+.intro-image img {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.features {
+    margin-top: 40px;
+}
+
+.features h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.feature-box {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 4px solid #0a84ff;
+    background: #f8f8f8;
+    border-radius: 6px;
+}
+
+.video-demo {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.video-demo video {
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.2);
+}
+
+.feature-box img {
+    width: 100%;
+    max-width: 700px;      /* Giới hạn ảnh tối đa */
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.feature-box {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 12px;
+    border-left: 4px solid #0a84ff;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* ★ Hiệu ứng nổi lên */
+.feature-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.20);
+}
+
+.feature-box img {
+    width: 100%;
+    max-width: 600px;
+    margin: 12px auto;
+}
+
+.feature-box.multiple-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

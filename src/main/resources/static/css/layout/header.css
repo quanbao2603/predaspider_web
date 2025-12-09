@@ -1,0 +1,84 @@
+:root {
+    --main-color: #0a84ff;      /* Xanh dương chủ đạo */
+    --main-color-hover: #58adff;
+    --text-color: #ffffff;
+}
+
+/* Container fix width */
+.container {
+    max-width: 1200px;  
+    width: 100%;        
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+
+/* Header tổng */
+.clean-header {
+    background: var(--main-color);
+    padding: 18px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: static;
+    top: 0;
+    z-index: 999;
+}
+
+/* Bên trong header */
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.logo span {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+/* Menu */
+.menu ul {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 17px;
+    font-weight: 600;
+    transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+/* Hover sáng lên giống Spotify */
+.menu ul li a:hover {
+    color: var(--main-color-hover);
+}
+
+/* Gạch đứng phân tách */
+.divider {
+    color: rgba(255,255,255,0.6);
+    margin: 0 6px;
+    font-size: 20px;
+}
+
+.clean-header {
+    width: 100% !important;
+    display: block;
+    margin: 0;
+    padding: 18px 0;
+    background: var(--main-color);
+}

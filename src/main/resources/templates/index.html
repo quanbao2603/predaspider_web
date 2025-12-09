@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>PredaSpider – Công cụ phân tích mạng 2025</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/layout/header.css">
+    <link rel="stylesheet" href="/css/layout/footer.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<th:block th:replace="layout/header"></th:block>
+
+<main class="main-content container">
+
+    <!-- GIỚI THIỆU -->
+    <section class="intro">
+        <h1>PredaSpider – Bộ công cụ phân tích mạng thế hệ mới (2025)</h1>
+        <p class="subtitle">
+            PredaSpider tích hợp các khả năng phân tích gói tin sâu (DPI), theo dõi lưu lượng mạng,
+            quét website và chỉnh sửa packet dành cho chuyên gia bảo mật, DevOps, pentester và nhà phát triển.
+        </p>
+
+        <!-- ẢNH GIỚI THIỆU -->
+        <div class="intro-image">
+            <img src="/assets/images/introduce/predaspider-dashboard.png" alt="PredaSpider Dashboard">
+        </div>
+    </section>
+
+    <!-- TÍNH NĂNG -->
+    <section class="features">
+
+        <h2><strong>Tính năng nổi bật</strong></h2>
+
+        <div class="feature-box">
+            <h3><strong>Quét & Bắt gói tin 🔍</strong></h3>
+            <p>
+                Hỗ trợ quét MyIP, AnyIP, Loopback; phân tích gói tin theo thời gian thực,
+                hỗ trợ đa giao thức (HTTP, HTTPS, TCP, UDP) và các port phổ biến như 80, 8080, 8888, 443.
+            </p>
+            <img src="/assets/images/introduce/scan-and-capture-packet/scan-and-capture-packet.jpg" alt="PredaSpider Scan">
+        </div>
+
+        <div class="feature-box">
+            <h3><strong>Phân tích Website/Domain & Ứng dụng 🌐</strong></h3>
+            <p>
+                Tự động phân tích cấu trúc website, request/response, tài nguyên, API.
+                Theo dõi ứng dụng dựa trên port, hiển thị tiến trình và lưu log gói tin.
+                Cho phép tải xuống file .png, .xml, .json… từ packet.
+            </p>
+            <img src="/assets/images/introduce/analyst-website-and-domain/analyst-website-and-domain-1.png" alt="PredaSpider Analyst">
+            <img src="/assets/images/introduce/analyst-website-and-domain/analyst-website-and-domain-2.png" alt="PredaSpider Analyst">
+            <img src="/assets/images/introduce/analyst-website-and-domain/analyst-website-and-domain-3.png" alt="PredaSpider Analyst">
+        </div>
+
+        <div class="feature-box">
+            <h3><strong>Packet Editing ✂️</strong></h3>
+            <p>
+                Chỉnh sửa nội dung gói tin, chèn packet vào luồng mạng,
+                phát lại traffic và kiểm tra chứng chỉ SSL/TLS.
+            </p>
+            <img src="/assets/images/introduce/packet-editing/packet-editing.jpg" alt="PredaSpider Edit">
+        </div>
+
+        <div class="feature-box">
+            <h3><strong>Tính năng nâng cao ⚡</strong></h3>
+            <p>
+                Quản lý firewall, chặn IP/domain, giám sát hệ thống, kiểm tra ứng dụng startup
+                và xuất dữ liệu ở các định dạng TXT, CSV, JSON.
+            </p>
+            <img src="/assets/images/introduce/advance-function/advance-function-1.jpg" alt="PredaSpider Advance">
+            <img src="/assets/images/introduce/advance-function/advance-function-2.jpg" alt="PredaSpider Advance">
+        </div>
+    </section>
+
+    <!-- VIDEO DEMO -->
+    <section class="video-demo">
+        <h2>Video demo sử dụng PredaSpider</h2>
+        <video controls width="900">
+            <source src="/assets/video/predaspider-demo.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ video HTML5.
+        </video>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<th:block th:replace="layout/footer"></th:block>
+
+</body>
+</html>

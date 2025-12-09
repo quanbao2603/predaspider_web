@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>PredaSpider – Sản phẩm</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/layout/header.css">
+    <link rel="stylesheet" href="/css/layout/footer.css">
+    <link rel="stylesheet" href="/css/product/product.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<th:block th:replace="layout/header"></th:block>
+
+<main class="container product-page">
+
+    <h1 class="title">Sản phẩm PredaSpider</h1>
+    <p class="desc">
+        Tải xuống công cụ phân tích mạng PredaSpider phiên bản mới nhất (2025) – hỗ trợ chuyên gia bảo mật,
+        pentester và quản trị viên hệ thống.
+    </p>
+
+    <!-- CARD SẢN PHẨM -->
+    <div class="product-card">
+
+        <img src="/assets/images/introduce/predaspider-dashboard.png" class="product-img">
+
+        <div class="product-info">
+            <h2>PredaSpider Tool</h2>
+            <p>
+                Bộ công cụ phân tích mạng thế hệ mới: quét IP, bắt gói tin, phân tích website/domain,
+                chỉnh sửa packet, phát lại traffic và nhiều tính năng cao cấp khác.
+            </p>
+
+            <p>Password giải nén: 1</p>
+
+            <a href="/assets/product/predaspider-tool.zip" class="download-btn" download>
+                ⬇ Tải xuống bản ZIP
+            </a>
+        </div>
+    </div>
+</main>
+
+<!-- FOOTER -->
+<th:block th:replace="layout/footer"></th:block>
+
+</body>
+</html>

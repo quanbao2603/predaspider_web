@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Liên hệ – PredaSpider</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/layout/header.css">
+    <link rel="stylesheet" href="/css/layout/footer.css">
+
+    <link rel="stylesheet" href="/css/contact/contact.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<th:block th:replace="layout/header"></th:block>
+
+<main class="container contact-page">
+
+    <h1 class="title">Liên hệ PredaSpider</h1>
+    <p class="desc">Chọn một trong các phương thức dưới đây để liên hệ hỗ trợ nhanh nhất.</p>
+
+    <div class="contact-grid">
+
+        <!-- DISCORD -->
+        <div class="contact-card">
+            <img src="/assets/icon/discord.png" class="contact-icon">
+            <h2>Liên hệ qua Discord</h2>
+            <p>Vào server Discord để trao đổi trực tiếp, hỗ trợ kỹ thuật & báo lỗi nhanh chóng.</p>
+
+            <a href="https://discord.gg/8S3T3fYXYX" target="_blank" class="contact-btn discord-btn">
+                Tham gia Discord
+            </a>
+        </div>
+
+        <!-- FANPAGE FACEBOOK -->
+        <div class="contact-card">
+            <img src="/assets/icon/facebook.png" class="contact-icon">
+
+            <h2>Nhắn tin qua Fanpage</h2>
+            <p>Nhắn tin Messenger để được hỗ trợ trực tiếp từ đội ngũ PredaSpider.</p>
+
+            <a href="https://m.me/61584704524389" target="_blank" class="contact-btn fb-btn">
+                Nhắn tin Fanpage
+            </a>
+        </div>
+
+    </div>
+
+</main>
+
+<!-- FOOTER -->
+<th:block th:replace="layout/footer"></th:block>
+
+</body>
+</html>
