@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>PredaSpider</title>
+
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <!-- CSS Layout -->
+    <link rel="stylesheet" href="/css/layout/header.css">
+    <link rel="stylesheet" href="/css/layout/footer.css">
+
+    <!-- Index CSS -->
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/download.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <th:block th:replace="layout/header :: header"></th:block>
+
+    <main class="main-container">
+
+        <!-- HERO -->
+        <section class="download-hero">
+            <h1>Download PredaSpider</h1>
+            <p>
+                Get the latest version of PredaSpider and start analyzing
+                network traffic with powerful tools.
+            </p>
+        </section>
+
+        <!-- DOWNLOAD GRID -->
+        <section class="download-grid">
+
+            <!-- WINDOWS INSTALLER -->
+            <div class="download-card highlight">
+
+                <div class="download-icon">🪟</div>
+
+                <h3>Windows Installer</h3>
+
+                <p class="desc">
+                    Recommended for most users. Easy installation with automatic
+                    setup and updates.
+                </p>
+
+                <!-- FOOTER (ALIGNED) -->
+                <div class="download-footer">
+                    <div class="download-meta">
+                        <span>Format: <strong>.exe</strong></span>
+                        <span>Version: <strong>v1.0.0</strong></span>
+                    </div>
+
+                    <a href="/assets/product/PredaSpider.exe" class="download-btn primary">
+                        Download EXE
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- PORTABLE PACKAGE -->
+            <div class="download-card">
+
+                <div class="download-icon">📦</div>
+
+                <h3>Portable Package</h3>
+
+                <p class="desc">
+                    Portable version for advanced users.
+                    No installation required.
+                </p>
+
+                <!-- FOOTER (ALIGNED) -->
+                <div class="download-footer">
+                    <div class="download-meta">
+                        <span>Format: <strong>.zip</strong></span>
+                        <span>Version: <strong>v1.0.0</strong></span>
+                    </div>
+
+                    <a href="/assets/product/PredaSpider.zip" class="download-btn">
+                        Download ZIP
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <th:block th:replace="layout/footer :: footer"></th:block>
+
+    <script src="/js/layout/header.js"></script>
+
+</body>
+
+</html>

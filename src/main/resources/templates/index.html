@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>PredaSpider</title>
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Layout -->
+    <link rel="stylesheet" href="/css/layout/header.css">
+    <link rel="stylesheet" href="/css/layout/footer.css">
+
+    <!-- Index CSS -->
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <th:block th:replace="layout/header :: header"></th:block>
+
+    <main class="main-container">
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-image">
+                <img th:src="@{/assets/image/hero-section.jpg}" alt="PredaSpider Preview">
+            </div>
+        </section>
+
+        <!-- FEATURES PREVIEW -->
+        <section class="features-preview">
+            <h2>Core Features</h2>
+
+            <div class="grid">
+                <div class="feature-card">
+                    <h3>Fast Scanning</h3>
+                    <p>Quickly scan ports, services, and network structures.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Automation</h3>
+                    <p>Automate repetitive tasks using advanced and flexible modules.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Modern UI</h3>
+                    <p>A clean, responsive interface with detailed analytics.</p>
+                </div>
+            </div>
+
+            <div class="see-more">
+                <a href="/features">See all features →</a>
+            </div>
+        </section>
+
+        <!-- INTRO ARTICLE -->
+        <section class="intro-article">
+
+            <h2>Introduction to PredaSpider</h2>
+
+            <p class="lead">
+                PredaSpider is a next-generation network analysis toolkit, developed since 2024
+                and officially released in December 2025.
+            </p>
+
+            <p>
+                It helps users monitor, observe, and analyze network activity in a visual,
+                accurate, and user-friendly way.
+            </p>
+
+            <p>
+                Beyond basic IP scanning or packet capturing, PredaSpider enables deep inspection
+                of sent and received data, real-time application traffic monitoring, website and API
+                testing, packet editing, firewall management, data exporting, and many other features
+                designed for security professionals, DevOps engineers, and developers.
+            </p>
+
+            <h3>Powerful Analysis Capabilities</h3>
+
+            <p>
+                With a modern interface and an optimized analysis engine, PredaSpider allows you to
+                easily understand how applications communicate, trace request and response flows,
+                observe port usage, detect abnormal connections, and debug complex APIs without
+                relying on bulky or complicated tools.
+            </p>
+
+            <figure class="article-figure">
+                <img src="/img/sample_network.jpg" alt="Network Analysis">
+                <figcaption>Real-time network traffic analysis view</figcaption>
+            </figure>
+
+            <p>
+                PredaSpider is suitable for a wide range of users: backend developers building services,
+                DevOps engineers monitoring microservice connections, security specialists investigating
+                suspicious traffic, or students learning how network protocols work.
+            </p>
+
+            <h3>What Does PredaSpider Offer?</h3>
+
+            <ul class="feature-list">
+                <li>Real-time network traffic monitoring</li>
+                <li>Per-application traffic analysis</li>
+                <li>Full visibility into requests, responses, headers, SSL, errors, and timing</li>
+                <li>Anomaly detection and incident investigation support</li>
+                <li>Data export in multiple formats for reporting and learning</li>
+            </ul>
+
+            <p class="closing">
+                PredaSpider is a comprehensive toolkit for anyone working with networks,
+                security, and systems—helping save time, improve analysis efficiency,
+                and gain deeper insight into everything happening inside your machine.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <th:block th:replace="layout/footer :: footer"></th:block>
+
+    <script src="/js/layout/header.js"></script>
+
+</body>
+
+</html>

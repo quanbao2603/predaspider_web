@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Terms of Service | PredaSpider</title>
+
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Layout CSS -->
+    <link rel="stylesheet" href="/css/layout/header.css">
+    <link rel="stylesheet" href="/css/layout/footer.css">
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/terms.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <th:block th:replace="layout/header :: header"></th:block>
+
+    <main class="main-container">
+
+        <!-- HERO -->
+        <section class="terms-hero">
+            <h1>Terms of Service</h1>
+            <p class="warning">
+                Disclaimer – Please read carefully before using PredaSpider
+            </p>
+        </section>
+
+        <!-- TERMS CONTENT -->
+        <section class="terms-content">
+
+            <div class="terms-block">
+                <h2>I. Terms of Service Information</h2>
+                <p>
+                    The creators and all participants involved in the development and production of
+                    the software on this website are not liable for any actions and/or damages caused
+                    by this software.
+                </p>
+                <p>
+                    You are solely responsible for your actions and acknowledge that this software
+                    is created for educational purposes only. By using our products, you automatically
+                    agree to these terms.
+                </p>
+            </div>
+
+            <div class="terms-block">
+                <h2>II. Product Service Terms</h2>
+                <ul>
+                    <li>We do not offer refunds after purchase.</li>
+                    <li>We do not offer replacement keys without a valid reason.</li>
+                    <li>We will not provide any support in any form if fraud is detected.</li>
+                    <li>We are not responsible for any damages caused by you.</li>
+                </ul>
+            </div>
+
+            <div class="terms-block">
+                <h2>III. Service Commitment</h2>
+                <ul>
+                    <li>We offer a 7-day free trial of our software.</li>
+                    <li>We guarantee that the products are created exactly as described.</li>
+                    <li>We are committed to continuously developing the latest versions.</li>
+                    <li>We provide support throughout the purchase and usage process.</li>
+                    <li>We guarantee that our software is 100% malware-free.</li>
+                    <li>We guarantee that all customer information is kept confidential.</li>
+                    <li>No customer data will be shared with any third party, including ourselves.</li>
+                </ul>
+            </div>
+
+            <div class="terms-block">
+                <h2>IV. Use of the License</h2>
+                <ul>
+                    <li>Each license key is valid for use on one device only.</li>
+                    <li>Reverse engineering or decrypting the software is strictly prohibited.</li>
+                    <li>Transferring or copying documents to other servers is prohibited.</li>
+                    <li>
+                        Each document copy belongs exclusively to its owner.
+                        If stolen or shared, the key will be disabled.
+                    </li>
+                    <li>
+                        You agree not to use the Service to distribute illegal, abusive,
+                        offensive, or copyrighted content.
+                    </li>
+                    <li>
+                        We reserve the right to remove content or terminate access
+                        at any time without notice.
+                    </li>
+                    <li>
+                        These terms may be updated at any time without prior notice.
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <th:block th:replace="layout/footer :: footer"></th:block>
+
+    <script src="/js/layout/header.js"></script>
+
+</body>
+
+</html>

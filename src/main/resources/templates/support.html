@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>PredaSpider</title>
+
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Layout -->
+    <link rel="stylesheet" href="/css/layout/header.css">
+    <link rel="stylesheet" href="/css/layout/footer.css">
+
+    <!-- Index CSS -->
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/support.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <th:block th:replace="layout/header :: header"></th:block>
+
+    <main class="main-container">
+
+        <!-- HERO -->
+        <section class="support-hero">
+            <h1>Support & Contact</h1>
+            <p>
+                Need help with PredaSpider?
+                Contact us via email or join our Discord community for faster support.
+            </p>
+        </section>
+
+        <!-- SUPPORT GRID -->
+        <section class="support-grid">
+
+            <!-- EMAIL SUPPORT -->
+            <div class="support-card">
+                <div class="support-icon">📧</div>
+
+                <h3>Email Support</h3>
+
+                <p class="desc">
+                    Contact our support team via email for bug reports,
+                    licensing issues, or technical questions.
+                </p>
+
+                <div class="support-meta">
+                    <span>Email:</span>
+                    <strong>predaspider@gmail.com</strong>
+                </div>
+
+                <a href="mailto:predaspider@gmail.com" class="support-btn primary">
+                    Send Email
+                </a>
+            </div>
+
+            <!-- DISCORD SUPPORT -->
+            <div class="support-card highlight">
+                <div class="support-icon">💬</div>
+
+                <h3>Discord Server</h3>
+
+                <p class="desc">
+                    Join our Discord server to get real-time help,
+                    announcements, and community discussions.
+                </p>
+
+                <div class="support-meta">
+                    <span>Community:</span>
+                    <strong>PredaSpider Discord</strong>
+                </div>
+
+                <a href="https://discord.gg/HUruBwkQVs" target="_blank" class="support-btn">
+                    Join Discord
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <th:block th:replace="layout/footer :: footer"></th:block>
+
+    <script src="/js/layout/header.js"></script>
+
+</body>
+
+</html>

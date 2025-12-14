@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>How It Works | PredaSpider</title>
+
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Layout CSS -->
+    <link rel="stylesheet" href="/css/layout/header.css">
+    <link rel="stylesheet" href="/css/layout/footer.css">
+
+    <!-- Common + Page CSS -->
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/guide.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <th:block th:replace="layout/header :: header"></th:block>
+
+    <main class="main-container">
+
+        <!-- HERO -->
+        <section class="how-hero">
+            <h1>How PredaSpider Works</h1>
+            <p>
+                Watch a complete walkthrough to understand how PredaSpider scans networks,
+                analyzes traffic, and helps you inspect and modify packets effectively.
+            </p>
+        </section>
+
+        <!-- VIDEO CARD -->
+        <section class="tutorial-card">
+
+            <!-- VIDEO EMBED -->
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/UDnoSSeIqhM" title="PredaSpider Tutorial" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <th:block th:replace="layout/footer :: footer"></th:block>
+
+    <script src="/js/layout/header.js"></script>
+
+</body>
+
+</html>

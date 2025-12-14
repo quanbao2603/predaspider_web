@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>PredaSpider</title>
+
+    <!-- CSS Layout -->
+    <link rel="stylesheet" href="/css/layout/header.css">
+    <link rel="stylesheet" href="/css/layout/footer.css">
+
+    <!-- Index CSS -->
+    <link rel="stylesheet" href="/css/common.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <th:block th:replace="layout/header :: header"></th:block>
+
+    <main class="main-container">
+
+        <section class="coming-soon">
+            <div class="coming-box">
+                <div class="icon">🛠️</div>
+
+                <h1>Page Under Development</h1>
+
+                <p>
+                    This section is currently being updated.<br>
+                    We’re working to deliver new features and improvements.
+                </p>
+
+                <div class="meta">
+                    Status: <strong>Coming soon</strong>
+                </div>
+
+                <a href="/" class="back-btn">← Back to Home</a>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <th:block th:replace="layout/footer :: footer"></th:block>
+
+    <script src="/js/layout/header.js"></script>
+
+</body>
+
+</html>

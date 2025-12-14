@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>PredaSpider</title>
+
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Layout -->
+    <link rel="stylesheet" href="/css/layout/header.css">
+    <link rel="stylesheet" href="/css/layout/footer.css">
+
+    <!-- Index CSS -->
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/pricing.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <th:block th:replace="layout/header :: header"></th:block>
+
+    <main class="main-container">
+
+        <!-- PRICING HERO -->
+        <section class="pricing-hero">
+            <h1>License & Activation</h1>
+            <p>
+                Choose the license that fits your needs and activate PredaSpider
+                to unlock all features.
+            </p>
+        </section>
+
+        <!-- PRICING GRID -->
+        <section class="pricing-grid">
+
+            <!-- MONTHLY PLAN -->
+            <div class="pricing-card">
+                <h3>Monthly License</h3>
+
+                <div class="price">
+                    300,000 <span>VND / month</span>
+                </div>
+
+                <ul class="pricing-features">
+                    <li>Full access to all features</li>
+                    <li>Network scanning & packet capture</li>
+                    <li>Website & application analysis</li>
+                    <li>Packet modification tools</li>
+                    <li>Updates during active subscription</li>
+                </ul>
+
+                <button class="pricing-btn" onclick="openModal('Monthly License')">
+                    Buy Monthly Key
+                </button>
+            </div>
+
+            <!-- LIFETIME PLAN -->
+            <div class="pricing-card highlight">
+                <div class="badge">Best Value</div>
+
+                <h3>Lifetime License</h3>
+
+                <div class="price">
+                    2,000,000 <span>VND (one-time)</span>
+                </div>
+
+                <ul class="pricing-features">
+                    <li>Permanent activation (no renewal)</li>
+                    <li>Full access to all current features</li>
+                    <li>All future updates included</li>
+                    <li>Advanced analysis & debugging tools</li>
+                    <li>Priority support</li>
+                </ul>
+
+                <button class="pricing-btn primary" onclick="openModal('Lifetime License')">
+                    Buy Lifetime Key
+                </button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <th:block th:replace="layout/footer :: footer"></th:block>
+
+    <script src="/js/layout/header.js"></script>
+
+    <!-- PURCHASE MODAL -->
+    <div id="purchaseModal" class="modal-overlay">
+        <div class="modal-box">
+
+            <div class="modal-icon">🔐</div>
+
+            <h3>Purchase Required</h3>
+
+            <p>
+                To activate <strong>PredaSpider</strong>, please contact our team.
+                We will assist you with licensing, payment, and activation.
+            </p>
+
+            <div class="modal-actions">
+                <a href="/support" class="modal-btn primary">
+                    Contact Support
+                </a>
+
+                <button class="modal-btn outline" onclick="closeModal()">
+                    Cancel
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        function openModal(planName) {
+            const modal = document.getElementById("purchaseModal");
+            modal.classList.add("active");
+        }
+
+        function closeModal() {
+            const modal = document.getElementById("purchaseModal");
+            modal.classList.remove("active");
+        }
+
+        // Đóng modal khi click ra ngoài
+        document.getElementById("purchaseModal").addEventListener("click", function (e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+    </script>
+
+</body>
+
+</html>

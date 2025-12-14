@@ -1,0 +1,262 @@
+/* ===============================
+   PRICING / LICENSE PAGE
+   FORCE FONT: INTER
+   =============================== */
+
+/* 🔥 FORCE FONT FOR WHOLE PAGE */
+body {
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Arial, sans-serif !important;
+}
+
+/* HERO */
+.pricing-hero {
+    text-align: center;
+    max-width: 720px;
+    margin: 70px auto 60px;
+}
+
+/* 🔥 FORCE FONT FOR TITLE */
+.pricing-hero h1 {
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Arial, sans-serif !important;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #1a1a1a;
+}
+
+/* Subtitle */
+.pricing-hero p {
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Arial, sans-serif;
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Grid */
+.pricing-grid {
+    max-width: 1000px;
+    margin: 0 auto 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+/* Card */
+.pricing-card {
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Arial, sans-serif;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 40px 36px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 6px 22px rgba(0,0,0,0.08);
+    text-align: center;
+    position: relative;
+}
+
+/* Highlight */
+.pricing-card.highlight {
+    border: 2px solid #ff6c2f;
+    box-shadow: 0 10px 30px rgba(255,108,47,0.25);
+}
+
+/* Badge */
+.badge {
+    position: absolute;
+    top: -12px;
+    right: 24px;
+    background: #ff6c2f;
+    color: #fff;
+    padding: 6px 14px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+/* Card title */
+.pricing-card h3 {
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Arial, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+    color: #1a1a1a;
+}
+
+/* Price */
+.price {
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #ff6c2f;
+}
+
+.price span {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #555;
+}
+
+/* Features */
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.pricing-features li {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    color: #444;
+}
+
+/* Button */
+.pricing-btn {
+    display: inline-block;
+    padding: 12px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #ff6c2f;
+    border: 1px solid #ff6c2f;
+    transition: 0.25s;
+}
+
+.pricing-btn:hover {
+    background: #ff6c2f;
+    color: #fff;
+}
+
+.pricing-btn.primary {
+    background: #ff6c2f;
+    color: #fff;
+}
+
+.pricing-btn.primary:hover {
+    background: #e85515;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+/* ===============================
+   MODAL – PURCHASE CONTACT
+   =============================== */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.25s;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Modal box */
+.modal-box {
+    background: #ffffff;
+    width: 420px;
+    max-width: 90%;
+    padding: 36px 32px;
+    border-radius: 18px;
+    text-align: center;
+    font-family: "Inter", system-ui, sans-serif;
+
+    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+    animation: modalPop 0.3s ease;
+}
+
+/* Icon */
+.modal-icon {
+    font-size: 2.8rem;
+    margin-bottom: 14px;
+}
+
+/* Title */
+.modal-box h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+/* Text */
+.modal-box p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 26px;
+}
+
+/* Actions */
+.modal-actions {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+}
+
+/* Buttons */
+.modal-btn {
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    transition: 0.25s;
+}
+
+/* Primary */
+.modal-btn.primary {
+    background: #ff6c2f;
+    color: #ffffff;
+}
+
+.modal-btn.primary:hover {
+    background: #e85515;
+}
+
+/* Outline */
+.modal-btn.outline {
+    background: transparent;
+    color: #ff6c2f;
+    border: 1px solid #ff6c2f;
+}
+
+.modal-btn.outline:hover {
+    background: #ff6c2f;
+    color: #ffffff;
+}
+
+/* Animation */
+@keyframes modalPop {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

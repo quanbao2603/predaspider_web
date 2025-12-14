@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Features | PredaSpider</title>
+
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Layout -->
+    <link rel="stylesheet" href="/css/layout/header.css">
+    <link rel="stylesheet" href="/css/layout/footer.css">
+
+    <!-- Common / Index CSS -->
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/features.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <th:block th:replace="layout/header :: header"></th:block>
+
+    <main class="main-container">
+
+        <!-- FEATURES HERO -->
+        <section class="features-hero">
+            <h1>PredaSpider Features</h1>
+            <p>
+                Powerful network scanning, traffic analysis, and packet manipulation tools
+                designed for security professionals, DevOps engineers, and developers.
+            </p>
+        </section>
+
+        <!-- FEATURES GRID -->
+        <section class="features-grid">
+
+            <!-- CARD 1 -->
+            <div class="feature-card-lg">
+                <h3>🔍 Scanning & Packet Capture</h3>
+                <p class="desc">
+                    Scan networks and capture traffic in real time with full visibility
+                    into inbound and outbound connections.
+                </p>
+                <ul>
+                    <li>Scan MyIP, Any IP, Loopback, and internal networks</li>
+                    <li>Two-way scanning between local networks and the Internet</li>
+                    <li>Real-time packet capture with multi-protocol analysis</li>
+                    <li>Support for ports 80, 8080, 8888, and 443</li>
+                </ul>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="feature-card-lg">
+                <h3>🌐 Website, Domain & Application Analysis</h3>
+                <p class="desc">
+                    Analyze websites, APIs, and application-level network behavior
+                    with detailed request and response inspection.
+                </p>
+                <ul>
+                    <li>Scan website structure, resources, and exposed APIs</li>
+                    <li>Inspect headers, requests, and responses</li>
+                    <li>Map applications to ports and running processes</li>
+                    <li>Download extracted files (.html, .png, .xml, .json)</li>
+                    <li>Trace where application data is sent and received</li>
+                </ul>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="feature-card-lg">
+                <h3>🧩 Packet Modification</h3>
+                <p class="desc">
+                    Modify, inject, and replay network packets for advanced
+                    testing and debugging scenarios.
+                </p>
+                <ul>
+                    <li>Edit packet contents in real time</li>
+                    <li>Inject or replace packets in live traffic flows</li>
+                    <li>Replay captured traffic</li>
+                    <li>Inspect and validate SSL/TLS certificates</li>
+                </ul>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="feature-card-lg">
+                <h3>⚙️ Advanced Features</h3>
+                <p class="desc">
+                    System-level utilities and export tools to support
+                    investigation, reporting, and skill development.
+                </p>
+                <ul>
+                    <li>Display system and network information</li>
+                    <li>Check applications that start with Windows</li>
+                    <li>Export data in TXT, CSV, and JSON formats</li>
+                    <li>Multiple testing tools to improve analysis level</li>
+                </ul>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <th:block th:replace="layout/footer :: footer"></th:block>
+
+    <script src="/js/layout/header.js"></script>
+
+</body>
+
+</html>

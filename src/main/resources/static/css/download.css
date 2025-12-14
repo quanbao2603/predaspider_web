@@ -1,0 +1,147 @@
+/* ===============================
+   DOWNLOAD PAGE – PREDA SPIDER
+   FONT: INTER
+   =============================== */
+
+body {
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Arial, sans-serif;
+}
+
+/* HERO */
+.download-hero {
+    text-align: center;
+    max-width: 720px;
+    margin: 70px auto 60px;
+}
+
+.download-hero h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #1a1a1a;
+}
+
+.download-hero p {
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* GRID */
+.download-grid {
+    max-width: 1000px;
+    margin: 0 auto 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+/* CARD */
+.download-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 40px 36px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 6px 22px rgba(0,0,0,0.08);
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.download-card.highlight {
+    border: 2px solid #ff6c2f;
+    box-shadow: 0 10px 30px rgba(255,108,47,0.25);
+}
+
+/* ICON */
+.download-icon {
+    font-size: 3rem;
+    margin-bottom: 18px;
+}
+
+/* TITLE */
+.download-card h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 14px;
+    color: #1a1a1a;
+}
+
+/* DESCRIPTION */
+.download-card .desc {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* FOOTER – SAME ROW ALIGN */
+.download-footer {
+    margin-top: auto;                 /* 🔥 đẩy xuống đáy card */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* META INFO */
+.download-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+/* BUTTON */
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 160px;
+    height: 44px;
+
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+
+    color: #ff6c2f;
+    border: 1px solid #ff6c2f;
+    background: transparent;
+
+    transition: 0.25s;
+}
+
+.download-btn:hover {
+    background: #ff6c2f;
+    color: #ffffff;
+}
+
+.download-btn.primary {
+    background: #ff6c2f;
+    color: #ffffff;
+}
+
+.download-btn.primary:hover {
+    background: #e85515;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .download-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .download-footer {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .download-meta {
+        align-items: center;
+    }
+}

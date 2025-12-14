@@ -1,0 +1,56 @@
+/* ===== COMING SOON (INSIDE MAIN LAYOUT) ===== */
+.coming-soon {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coming-box {
+    background: #ffffff;
+    max-width: 520px;
+    width: 100%;
+    padding: 50px 40px;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.coming-box .icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.coming-box h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+.coming-box p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.coming-box .meta {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    background: #ff6c2f;
+    color: #fff;
+    transition: 0.25s;
+}
+
+.back-btn:hover {
+    background: #e85c20;
+}
